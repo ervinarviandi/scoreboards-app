@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { LuTimerReset } from "react-icons/lu";
 import SparklesText from '../magicui/sparkles-text';
+import { motion } from "framer-motion";
 
 
 const Hero = () => {
@@ -58,8 +59,11 @@ function reset () {
 
 
   return (
-    <HeroHighlight className="w-full   ">
-         <button className="p-4 rounded-full bg-rose-500 backdrop-blur z-50  text-lg flex items-center gap-x-2  bottom-16 fixed right-5" onClick={reset}><LuTimerReset size={20} className="dark:text-white text-black "/></button>
+    <motion.section initial={{ y: 250 }} animate={{ y: -1 }} transition={{  delay: 3.1, type: "spring" }} >
+
+   
+    <HeroHighlight className="w-full  ">
+         <button className="p-4 rounded-full bg-rose-500 backdrop-blur z-50  text-lg flex items-center gap-x-2  bottom-3 fixed right-5" onClick={reset}><LuTimerReset size={20} className="dark:text-white text-black "/></button>
       <div className="lg:max-w-3xl mx-auto px-5">
 
       {/* <div className='flex justify-center item-center gap-x-2'>
@@ -105,6 +109,7 @@ function reset () {
         </div>
       </div>
     </HeroHighlight>
+    </motion.section>
   )
 }
 
