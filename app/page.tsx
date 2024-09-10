@@ -19,7 +19,5 @@ export default function Home() {
         </>
   );
 }
-function checkCount() {
-  throw new Error("Function not implemented.");
-}
+
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import { HeroHighlight } from "@/components/ui/hero-highlight";
-import Image from "next/image";
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { LuTimerReset } from "react-icons/lu";
@@ -66,9 +65,6 @@ function reset () {
       {/* <div className='flex justify-center item-center gap-x-2'>
       </div> */}
         <SparklesText text="Scoreboards" className='text-center dark:text-white text-black lg:text-6xl text-4xl' />
-        
-        {/* <Image src={Logo} alt="logo" width={60} height={60}  /> */}
-        {/* <h2 className="font-bold text-center lg:text-5xl text-3xl dark:text-gray-200 text-black lg:pt-10">Badminton Scoreboard</h2> */}
         <div className="text-center max-w-xs mx-auto lg:text-5xl font-bold text-2xl lg:mt-16 mt-10  dark:text-gray-200 text-black">
           
           <div className="p-2 lg:text-2xl text-xl bg-teal-500 rounded-xl font-old-standard">
